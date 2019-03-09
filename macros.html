@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Macros</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12">
+
+                <form onsubmit="return validateForm();" class="form auto" id="form">
+                    <div class="form-group c1">
+                        <label>GENDER</label>
+                        <br />
+                        <label id="emr" style="display:none; color:red;">Please Select Your Gender</label>
+                        
+                        <div class="segmented-control" id="gender" style="width: 250px; color: rgba(16, 59, 53, 0.0)">
+                            <input type="radio" value="m" name="gender" id="m">
+                            <input type="radio" value="f" name="gender" id="f">
+
+                            <label for="m">
+                                <img class="si" src="img/m.png" id="m1">
+                            </label>
+                            
+                            <label for="f">
+                                <img class="si" src="img/f.png" id="f1">
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>AGE</label>
+                        <input class="form-control input-small" type="number" name="age" min="1" max="120" placeholder="Age" id="age" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label>CURRENT WEIGHT</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="weight" min="1" placeholder="Weight" id="weight" required="required">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>HEIGHT</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="height" min="1" placeholder="Height" id="height" required="required">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">cm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ACTIVITY LEVEL</label>
+                       
+                                <select id="activity" class="input-small dd" >
+                                        <option value="sedentary">Sedentary</option>
+                                        <br />
+                                        <option value="light">Light</option>
+                                        <option value="moderate">Moderate</option>
+                                        <option value="extreme">Extreme</option>
+                                    </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>GOAL</label>
+                        <div class="segmented-control" style="width: 100%; color: #9cc2cb">
+                            <input type="radio" value="lo" name="goal" id="lo" checked>
+                            <input type="radio" value="ma" name="goal" id="ma">
+                            <input type="radio" value="ga" name="goal" id="ga">
+                            <label for="lo" data-value="Loose">Loose</label>
+                            <label for="ma" data-value="Maintain">Maintain</label>
+                            <label for="ga" data-value="Gain">Gain</label>
+                        </div>
+
+                    </div>
+                    <input class="btn btn-a btn-block" type="submit" value="Calculate" />
+           
+
+            </form> 
+        </div>
+            <div class="auto" id="results">
+                <h3 id="r" style="margin-bottom:20px;"> </h3>
+                <div class="form">
+                    <div class="form-row">
+                            <div class="col">
+                        <label class="form-control nb" id="proteins">Proteins</label></div>
+                        <div class="col">
+                        <label class="form-control nbr" id="r1"></label></div>
+                    </div>
+                    <div class="form-row">
+                            <div class="col">
+
+                        <label class="form-control nb" id="fats">Fats</label></div>
+                        <div class="col">
+                        <label class="form-control nbr" id="r2"></label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="col">
+
+                        <label class="form-control nb" id="carbs">Carbohydrates</label></div>
+                        <div class="col">
+                        <label class="form-control nbr" id="r3"></label></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/myScript.js"></script>
+<script>
+$(document).ready(function() {
+    $("option").css("line-height","50px;");
+    $('input[name="gender"]:radio').click(function(){
+        switch($(this).val()) {
+        case "m":
+            $("#f1").attr("src","img/f.png");
+            $("#m1").attr("src","img/m-c.png");
+  document.getElementById("emr").style.display="none";
+            
+            break;
+        case "f":
+            $("#f1").attr("src","img/f-c.png");
+            $("#m1").attr("src","img/m.png");
+  document.getElementById("emr").style.display="none";
+            
+            break;
+        }
+    });
+});
+function validateForm(){
+    return false;
+   
+}
+
+    var a, b, c, d, e, f, calories;
+
+    $('#form').on("submit",function(){
+        if (!$("input[name=gender]:checked").val()) {
+            document.getElementById("gender").focus();
+            document.getElementById("emr").style.display="block";
+    return false;
+  }
+  document.getElementById("emr").style.display="none";
+        document.getElementById("results").style.display = "block";
+        document.getElementById("r2").focus();
+        a = document.querySelector('input[name="gender"]:checked').value;
+        b = document.getElementById("age").value;
+        c = document.getElementById("weight").value;
+        d = document.getElementById("height").value;
+        e = document.getElementById("activity").value;
+        f = document.querySelector('input[name="goal"]:checked').value;
+        if (a == "m") {
+            calories = 66.47 + (13.47 * c) + (5 * d) - (6.8 * b);
+
+
+        } else if (a == "f") {
+            calories = 655.1 + (9.6 * c) + (1.8 * d) - (4.7 * b);
+
+        }
+        if (e == "sedentary") {
+            calories = calories * 1.2;
+        } else if (e == "light") {
+            calories = calories * 1.4;
+        } else if (e == "moderate") {
+            calories = calories * 1.8;
+        } else if (e == "extreme") {
+            calories = calories * 2.0;
+        }
+        if (f == "lo") {
+            calories = calories - 500;
+            document.getElementById("r").innerHTML = calories.toFixed(2) + " CALORIES PER DAY";
+            document.getElementById("r1").innerHTML = (((calories / 100) * 25) / 4).toFixed(2) +"g";
+            document.getElementById("r2").innerHTML = (((calories / 100) * 30) / 9).toFixed(2) +"g";
+            document.getElementById("r3").innerHTML = (((calories / 100) * 45) / 4).toFixed(2) +"g";
+        } else if (f == "ga") {
+            calories = calories + 500;
+            document.getElementById("r1").innerHTML = (((calories / 100) * 17) / 4).toFixed(2) +"g";
+            document.getElementById("r2").innerHTML = (((calories / 100) * 30) / 9).toFixed(2) +"g";
+            document.getElementById("r3").innerHTML = (((calories / 100) * 53) / 4).toFixed(2) +"g";
+            document.getElementById("r").innerHTML = calories.toFixed(2)+ " CALORIES PER DAY";
+        } else if (f == "ma") {
+            calories = calories;
+            document.getElementById("r").innerHTML = calories.toFixed(2) + " CALORIES PER DAY";
+            document.getElementById("r1").innerHTML = (((calories / 100) * 20) / 4).toFixed(2) +"g";
+            document.getElementById("r2").innerHTML = (((calories / 100) * 30) / 9).toFixed(2) +"g";
+            document.getElementById("r3").innerHTML = (((calories / 100) * 50) / 4).toFixed(2) +"g";
+        }
+    });
+</script>
+
+</html>

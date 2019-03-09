@@ -1,0 +1,447 @@
+.dd{
+    background-color: #d2e4e8 !important;
+    display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid #d2e4e8;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  option
+  {
+   
+    margin-bottom: 20px !important;
+  }
+  .dd>option
+  {
+   
+    margin-bottom: 20px !important;
+  }
+  .dd option
+  {
+   
+    margin-bottom: 20px !important;
+  }
+  select option:active {
+    color: black  !important;
+    background-color: #d2e4e8  !important;
+    border-color: #d2e4e8  !important;
+    outline: 0;
+    box-shadow: 0;
+  }
+ select option:focus {
+    color: black;
+    background-color: #d2e4e8;
+    border-color: #d2e4e8;
+    outline: 0;
+    box-shadow: 0;
+  }
+  .dd:active{
+    background-color: #d2e4e8 !important;
+    color: black;
+    background-color: #d2e4e8;
+    border-color: #d2e4e8;
+    outline: 0;
+    box-shadow: 0;
+   
+  }
+  .dd>option:active{
+    color:black !important;
+    box-sizing: 0 !important;
+    color: black;
+    background-color: #d2e4e8;
+    border-color: #d2e4e8;
+    outline: 0;
+    box-shadow: 0;
+  }
+  .dd>option:hover{
+    color:black !important;
+    box-sizing: 0 !important;
+    color: black;
+    background-color: #d2e4e8;
+    border-color: #d2e4e8;
+    outline: 0;
+    box-shadow: 0;
+    
+  }
+  .dropdown-menu > li > a:hover {
+    background-color: #d2e4e8 !important;
+    color:black !important;
+    box-sizing: 0 !important;
+    color: black;
+    background-color: #d2e4e8;
+    border-color: #d2e4e8;
+    outline: 0;
+    box-shadow: 0;
+    margin-bottom: 20px !important;
+    
+}
+
+option:hover {
+  background-color: #d2e4e8 !important;
+  color:black !important;
+  box-sizing: 0 !important;
+  color: black;
+  background-color: #d2e4e8;
+  border-color: #d2e4e8;
+  outline: 0;
+  box-shadow: 0;
+}
+#form{
+    margin-top:40px;
+}
+.form-group>label{
+    font-weight:bold;
+}
+.input-small{
+    max-width: 300px;
+}
+.input-group-append>span{
+    background-color:#9CC2CB;
+}
+.form-control{
+    border: 2px solid #e5e5e5;
+    -webkit-appearance: none;
+    background-color: #f0f0f0;
+}
+#results{
+    display: none;
+    text-align:center;
+    background-color:lightgrey;
+    margin-top:20px;
+    padding:100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 5%;
+    margin-bottom:20px;
+}
+.nb{
+    border:0;
+    background-color:transparent;
+    font-size:100%;
+}
+.nbr{
+    font-weight:bold;
+    border:0;
+    background-color:transparent;
+}
+.btn-a{
+background-color:#808080;
+color:white;
+border: .071428571em solid #808080;
+}
+.btn-a:active {
+    border: .071428571em solid #3d3b3b;
+    color: white;
+    border: .071428571em solid #3d3b3b;
+}
+
+.btn-a:hover {
+    background-color: #3d3b3b;
+    color: white;
+    border: .071428571em solid #3d3b3b;
+}
+
+.auto{
+    max-width: 600px;
+    align-self: auto;
+    margin:0 auto;
+}
+.si{
+    width:38px;
+}
+
+.segmented-control {
+    position: relative;
+    display: inline-block;
+    border: 4px solid currentColor;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    overflow: hidden;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-transition-duration: 0.08;
+    -o-transition-duration: 0.08;
+    -webkit-transition-duration: 0.08;
+    transition-duration: 0.08;
+    -moz-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.5);
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    -webkit-transition-property: none;
+    transition-property: none;
+    -webkit-tap-highlight-color: transparent; }
+    .segmented-control > input {
+      position: absolute;
+      left: -10000px;
+      opacity: 0; }
+      .segmented-control > input[type='checkbox'] ~ label {
+        -moz-transition-duration: 0.08;
+        -o-transition-duration: 0.08;
+        -webkit-transition-duration: 0.08;
+        transition-duration: 0.08; }
+        .segmented-control > input[type='checkbox'] ~ label:before {
+          opacity: 0; }
+      .segmented-control > input:disabled:nth-child(1) ~ label:nth-of-type(1) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(1):checked ~ label:nth-of-type(1):after, .segmented-control > input:nth-child(1):checked ~ label:nth-of-type(1):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%); }
+      .segmented-control > input:disabled:nth-child(2) ~ label:nth-of-type(2) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(2):checked ~ label:nth-of-type(2):after, .segmented-control > input:nth-child(2):checked ~ label:nth-of-type(2):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):before, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); }
+      .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):before, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); }
+      .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4):after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4):before, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); }
+      .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5):after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5):before, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); }
+      .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%); }
+      .segmented-control > input:disabled:nth-child(3) ~ label:nth-of-type(3) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(3):checked ~ label:nth-of-type(3):after, .segmented-control > input:nth-child(3):checked ~ label:nth-of-type(3):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):before, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%); }
+      .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4):after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4):before, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%); }
+      .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5):after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5):before, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%); }
+      .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%); }
+      .segmented-control > input:disabled:nth-child(4) ~ label:nth-of-type(4) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(4):checked ~ label:nth-of-type(4):after, .segmented-control > input:nth-child(4):checked ~ label:nth-of-type(4):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4):after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4):before, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+        -moz-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+        -webkit-transform: translateX(300%);
+        transform: translateX(300%); }
+      .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5):after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5):before, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+        -moz-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+        -webkit-transform: translateX(300%);
+        transform: translateX(300%); }
+      .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+        -webkit-transform: translateX(300%);
+        transform: translateX(300%); }
+      .segmented-control > input:disabled:nth-child(5) ~ label:nth-of-type(5) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(5):checked ~ label:nth-of-type(5):after, .segmented-control > input:nth-child(5):checked ~ label:nth-of-type(5):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5):after, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5):before, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+        -moz-transform: translateX(400%);
+        -ms-transform: translateX(400%);
+        -webkit-transform: translateX(400%);
+        transform: translateX(400%); }
+      .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(400%);
+        -ms-transform: translateX(400%);
+        -webkit-transform: translateX(400%);
+        transform: translateX(400%); }
+      .segmented-control > input:disabled:nth-child(6) ~ label:nth-of-type(6) {
+        opacity: 0.3;
+        cursor: not-allowed; }
+      .segmented-control > input:nth-child(6):checked ~ label:nth-of-type(6):after, .segmented-control > input:nth-child(6):checked ~ label:nth-of-type(6):before {
+        opacity: 1; }
+      .segmented-control > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6):after, .segmented-control > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6):before, .segmented-control > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+        -moz-transform: translateX(500%);
+        -ms-transform: translateX(500%);
+        -webkit-transform: translateX(500%);
+        transform: translateX(500%); }
+    .segmented-control > label {
+      display: inline-block;
+      padding: 0 .71em;
+      cursor: pointer;
+      float: left;
+      line-height: 3em;
+      font-style: inherit;
+      font-weight: inherit;
+      text-decoration: inherit;
+      -moz-transition-property: none;
+      -o-transition-property: none;
+      -webkit-transition-property: none;
+      transition-property: none;
+      -moz-transition-duration: inherit;
+      -o-transition-duration: inherit;
+      -webkit-transition-duration: inherit;
+      transition-duration: inherit;
+      -moz-transition-timing-function: inherit;
+      -o-transition-timing-function: inherit;
+      -webkit-transition-timing-function: inherit;
+      transition-timing-function: inherit; }
+      .segmented-control > label:before, .segmented-control > label:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%); }
+      .segmented-control > label:after {
+        color: black;
+        content: attr(data-value);
+        text-align: center;
+        padding: inherit;
+        z-index: 10;
+        font-style: inherit;
+        text-decoration: inherit;
+        font-weight: inherit;
+        opacity: 0;
+        -moz-transition-property: opacity, -moz-transform;
+        -o-transition-property: opacity, -o-transform;
+        -webkit-transition-property: opacity, -webkit-transform;
+        transition-property: opacity, transform;
+        -moz-transition-duration: inherit;
+        -o-transition-duration: inherit;
+        -webkit-transition-duration: inherit;
+        transition-duration: inherit;
+        -moz-transition-timing-function: inherit;
+        -o-transition-timing-function: inherit;
+        -webkit-transition-timing-function: inherit;
+        transition-timing-function: inherit; }
+      .segmented-control > label:after, .segmented-control > label {
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      .segmented-control > label:before {
+        content: '';
+        color: inherit;
+        background: currentColor;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -moz-transition-duration: inherit;
+        -o-transition-duration: inherit;
+        -webkit-transition-duration: inherit;
+        transition-duration: inherit;
+        -moz-transition-timing-function: inherit;
+        -o-transition-timing-function: inherit;
+        -webkit-transition-timing-function: inherit;
+        transition-timing-function: inherit; }
+      .segmented-control > label:first-of-type:nth-last-of-type(1), .segmented-control > label:first-of-type:nth-last-of-type(1):after, .segmented-control > label:first-of-type:nth-last-of-type(1):before, .segmented-control > label:first-of-type:nth-last-of-type(1) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(1) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(1) ~ label:before {
+        width: 100%; }
+      .segmented-control > label:first-of-type:nth-last-of-type(2), .segmented-control > label:first-of-type:nth-last-of-type(2):after, .segmented-control > label:first-of-type:nth-last-of-type(2):before, .segmented-control > label:first-of-type:nth-last-of-type(2) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(2) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(2) ~ label:before {
+        width: 50%; }
+      .segmented-control > label:first-of-type:nth-last-of-type(3), .segmented-control > label:first-of-type:nth-last-of-type(3):after, .segmented-control > label:first-of-type:nth-last-of-type(3):before, .segmented-control > label:first-of-type:nth-last-of-type(3) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(3) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(3) ~ label:before {
+        width: 33.33333%; }
+      .segmented-control > label:first-of-type:nth-last-of-type(4), .segmented-control > label:first-of-type:nth-last-of-type(4):after, .segmented-control > label:first-of-type:nth-last-of-type(4):before, .segmented-control > label:first-of-type:nth-last-of-type(4) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(4) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(4) ~ label:before {
+        width: 25%; }
+      .segmented-control > label:first-of-type:nth-last-of-type(5), .segmented-control > label:first-of-type:nth-last-of-type(5):after, .segmented-control > label:first-of-type:nth-last-of-type(5):before, .segmented-control > label:first-of-type:nth-last-of-type(5) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(5) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(5) ~ label:before {
+        width: 20%; }
+      .segmented-control > label:first-of-type:nth-last-of-type(6), .segmented-control > label:first-of-type:nth-last-of-type(6):after, .segmented-control > label:first-of-type:nth-last-of-type(6):before, .segmented-control > label:first-of-type:nth-last-of-type(6) ~ label, .segmented-control > label:first-of-type:nth-last-of-type(6) ~ label:after, .segmented-control > label:first-of-type:nth-last-of-type(6) ~ label:before {
+        width: 16.66667%; }
+    .segmented-control.italic, .segmented-control .italic {
+      font-style: italic; }
+    .segmented-control.bold, .segmented-control .bold {
+      font-weight: bold; }
+    .segmented-control.underline, .segmented-control .underline {
+      text-decoration: underline; }
+    .segmented-control.line-through, .segmented-control .line-through {
+      text-decoration: line-through; }
+  
+  /*# sourceMappingURL=segmented-controls.css.map */
+  @media screen and (max-width: 992px) {
+    #results {
+      padding:20px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    #results {
+      padding:20px;
+    }
+  }
